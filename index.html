@@ -8,14 +8,29 @@
                 height: 200px;
                 width: 200px;
             }
+            .box_two {
+                background-color: red;
+                height: 200px;
+                width: 200px;
+            }
+            .box_three {
+                background-color: blue;
+                height: 200px;
+                width: 200px;
+            }
+            [v-cloak] {
+                display:none;
+            }
             </style>
     </head>
     <body>
-        <div id="app">
+        <div id="app" v-cloak>
            {{ greeting }} <!--Content inside {{}} will be parsed as javascript-->
-        <input v-model="greeting" />
+        <input @keyup.enter ="greet" v-model="greeting" />
         <hr />
+        <button @click="toggleBox">Toggle Box</button>
         <div v-if="isVisible" class="box"></div>
+        
         </div>
         
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -24,7 +39,16 @@
                 data : function() {
                     return {
                         greeting: 'Hello Vue 3!',
-                        isVisible: false
+                        isVisible: false,                       
+                    }
+                },
+                methods : {
+                    toggleBox() {
+                        console.log("inside the toggle box function");
+                        this.isVisible = !this.isVisible;
+                    },
+                    greet() {
+                        console.log(this.greeting);
                     }
                 }
             })
