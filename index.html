@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue 3 basics</title>
+    </head>
+    <body>
+        <div id="app">
+           {{ greeting }} <!--Content inside {{}} will be parsed as javascript-->
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script>
+            let app = Vue.createApp({
+                data : function() {
+                    return {
+                        greeting: 'Hello Vue 3!'
+                    }
+                }
+            })
+            app.mount("#app") //Mount vue app inside the element with id app
+        </script>
+    </body>
+</html>
