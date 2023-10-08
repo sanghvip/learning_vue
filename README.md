@@ -19,3 +19,18 @@ Vue events and methods
 3. @(shorthand) replaces v-on
 4. listen for keyboard event using @keyup. Listen for enter key press using @keyup.enter
 5. event modifier listens for specific event. For a keyup event is @keyup.enter
+
+Vue components
+1.  app.component will be used to create a vue component which takes 2 parameter, name and options object
+2. the options object can contain template key to specify the template
+3. data key to specify the data
+4. passing data to child component using v-bind:var_name
+5. Child component can accept props from parent by specifying props key in the components options object
+6. for the parent component to recognize any child component, we need a component key and value of lists containing the child component name
+7. since v-bind is a very common directive, we can use :<propname> instead of v-bind
+8. To pass a value to child we create a prop key in the child component and specify the lable. For passing from child to parent, we have something called modelValue and computed key with its own get and set method.
+9. props are immutable in the child
+
+Vue template loop
+1. v-for is a for in loop which can be used to iterate over an array
+2. key attribute should be specified on the element which will be repeated
