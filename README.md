@@ -34,3 +34,13 @@ Vue components
 Vue template loop
 1. v-for is a for in loop which can be used to iterate over an array
 2. key attribute should be specified on the element which will be repeated
+
+
+Vue lifecycle hooks
+[Flowchart](https://vuejs.org/assets/lifecycle.16e4c08e.png)
+
+lifecycle hooks helpful for following usecases
+1. check if user is authorized
+2. api calls
+3. creating or removing events
+4. getting or cleaning up data
