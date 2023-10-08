@@ -44,3 +44,5 @@ lifecycle hooks helpful for following usecases
 2. api calls
 3. creating or removing events
 4. getting or cleaning up data
+
+[CheatSheet](https://www.vuemastery.com/pdf/Vue-Essentials-Cheat-Sheet.pdf)
