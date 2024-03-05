@@ -6,6 +6,9 @@ Vue setup
 2. Availabilty of the Vue variable in the <script> to initialize and create the vue app
 3. ability to pass data to the app using the options and data variable
 
+Vue options vs compositions api
+[Resource 1](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi60Yir-t2EAxVTl4kEHVuXCZYQFnoECBgQAQ&url=https%3A%2F%2Fvueschool.io%2Farticles%2Fvuejs-tutorials%2Foptions-api-vs-composition-api%2F&usg=AOvVaw2b14O1BWAHFddAfXQl1FZU&opi=89978449)
+
 Vue directive
 1. v-model: to link a html directive with a variable
 2. v- prefix helps to differentiate the vue components
