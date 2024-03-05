@@ -30,6 +30,7 @@ Vue components
 7. since v-bind is a very common directive, we can use :<propname> instead of v-bind
 8. To pass a value to child we create a prop key in the child component and specify the lable. For passing from child to parent, we have something called modelValue and computed key with its own get and set method.
 9. props are immutable in the child
+10. Passing data from child to parent could be done using the custom event created in the parent component. [link](https://dev.to/freakflames29/how-to-pass-data-from-child-to-parent-in-vue-js-2d9m)
 
 Vue template loop
 1. v-for is a for in loop which can be used to iterate over an array
